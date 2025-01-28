@@ -8987,10 +8987,10 @@ A "tear sheet" is a comprehensive summary of portfolio performance that includes
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">quantstats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">qs</span>
 
-<span class="n">qs</span><span class="o">.</span><span class="n">extend_pandas</span><span class="p">()</span>
+<span class="c1"># qs.extend_pandas()</span>
 
 <span class="c1"># Generate HTML tear sheet comparing the portfolio to the S&amp;P 500</span>
-<span class="n">qs</span><span class="o">.</span><span class="n">reports</span><span class="o">.</span><span class="n">basic</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"HiOP LoINV"</span><span class="p">],</span> <span class="n">benchmark</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"Mkt"</span><span class="p">],</span> <span class="n">rf</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"RF"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">periods_per_year</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">qs</span><span class="o">.</span><span class="n">reports</span><span class="o">.</span><span class="n">basic</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"HiOP LoINV"</span><span class="p">],</span> <span class="n">benchmark</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"Mkt"</span><span class="p">],</span> <span class="n">rf</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"RF"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -9019,10 +9019,10 @@ Time in Market      100.0%       100.0%
 Cumulative Return   95.81%       78.08%
 CAGR﹪              10.06%       8.58%
 
-Sharpe              0.16         0.14
+Sharpe              0.74         0.64
 Prob. Sharpe Ratio  94.49%       91.75%
-Sortino             0.22         0.19
-Sortino/√2          0.16         0.14
+Sortino             1.03         0.9
+Sortino/√2          0.73         0.64
 Omega               1.12         1.12
 
 Max Drawdown        -34.27%      -29.38%
@@ -9085,21 +9085,7 @@ Serenity Index      0.52         0.27
 <div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># qs.reports.full(df["HiOP LoINV"], benchmark=df["Mkt"], rf=df["RF"].mean(), periods_per_year=12)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># qs.reports.full(df["HiOP LoINV"], benchmark=df["Mkt"], rf=df["RF"].mean())</span>
 </pre></div>
 </div>
 </div>
